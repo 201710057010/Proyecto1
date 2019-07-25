@@ -2,12 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './login/login.component';
+import { ComentariosComponent } from './comentarios/comentarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrarseComponent
+    RegistroComponent,
+    LoginComponent,
+    ComentariosComponent,
   ],
   imports: [
     BrowserModule,

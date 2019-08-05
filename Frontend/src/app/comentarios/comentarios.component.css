@@ -1,0 +1,20 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.background{
+  background-color: whitesmoke;
+}
+
+.comentario{
+  background-color: cornsilk;
+  margin-top:  10px;
+}

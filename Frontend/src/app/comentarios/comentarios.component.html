@@ -1,1 +1,28 @@
-<p>comentarios works!</p>
+<body class = "background">
+  <div class= "row">
+    <div class="column">
+      <div class = "publicaciones" *ngFor = "let item of comentarios">
+        <div class = "comentario">
+          {{item.commentary}}
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class = "buscar">
+        <div class = "byname">
+          Buscar publicaciones de un usuario: <input type= "text" name = "usuario"> <br>
+          <button type= "button">
+            Buscar
+          </button>
+        </div>
+        <div class = "bytopic">
+          Buscar publicaciones de un tema en especifico: <input type= "text" name = ""> <br>
+          <button type= "button">
+            Buscar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

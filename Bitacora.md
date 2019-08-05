@@ -4,4 +4,8 @@ Para el back-end del proyecto decidi usar Django-REST ya que lo he usado antes, 
 
 Semana 2:
 
-Agregada la auntenticación de los usuarios al back-end con Django-REST
+Agregada la auntenticación de los usuarios al back-end con Django-REST y terminado el diseño del front-end
+
+Semana 3: 
+
+Listo el read a los comentarios

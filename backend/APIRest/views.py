@@ -37,7 +37,7 @@ class ComentaryViewSet(viewsets.ModelViewSet):
 
     authentication_classes = (TokenAuthentication,)
     serializer_class = serializers.ComentarySerializer
-    queryset = models.Commentaries.objects.all()
+    queryset = models.Commentaries.objects.all().order_by('-id')
     permission_classes= (permissions.PostOwnStatus, IsAuthenticatedOrReadOnly)
 
     def perform_create(self, serializer):

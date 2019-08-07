@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+   dj:
+      container_name: dj
+      build: backend
+      command: python manage.py runserver 0.0.0.0:80
+      volumes:
+        - ./backend:/code
+      ports:
+         - "80:80"
+      

@@ -1,5 +1,5 @@
 <body class="text-center">
-    <form class="form-signin">
+  <form class="form-signin">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputUsername" class="sr-only">Username </label>
   <input #nameUser type="username" id="inputUsername" class="form-control" placeholder="Username" required="">
@@ -8,6 +8,7 @@
   <div class="checkbox mb-3"><label for="inputPassword" class="sr-only">Password</label>
   <input #passwordUser type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit" (click) = "createUser(emailUser.value, nameUser.value, passwordUser.value)">Sign in</button>
+  <button class="btn btn-lg btn-primary btn-block" (click) = "createUser(emailUser.value, nameUser.value, passwordUser.value)" type = "button">Sign in</button>
+  <div> {{mensaje}} </div>
 </form>
 </body>

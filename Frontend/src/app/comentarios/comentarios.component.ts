@@ -10,6 +10,8 @@ import { ApiService } from 'app/api.service';
 export class ComentariosComponent implements OnInit {
 
   comentarios;
+  usuarios;
+  usuariosComentarios;
 
   constructor(private api: ApiService) {
     this.getComentaries();
@@ -23,7 +25,7 @@ export class ComentariosComponent implements OnInit {
       error => {
         console.log(error);
       }
-    )
+    );
   }
 
   ngOnInit(){

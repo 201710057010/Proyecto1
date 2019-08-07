@@ -2,11 +2,11 @@
     <form class="form-signin">
   <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
   <label for="inputUsername" class="sr-only">Username</label>
-  <input type="username" id="inputUsername" class="form-control" placeholder="Username" required="">
+  <input  #nameUser type="username" id="inputUsername" class="form-control" placeholder="Username" required="">
   <div class="checkbox mb-3"><label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+  <input #passwordUser type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  <button class="btn btn-lg btn-primary btn-block" type="button" (click) = "login(nameUser.value, passwordUser.value)"  >Login</button>
   <a routerLink="/registrarse"> Registrarme</a>
 </form>
 

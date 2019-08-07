@@ -22,11 +22,6 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 class ComentarySerializer(serializers.ModelSerializer):
     """ a serializer for comentaries"""
-    user = serializers.SlugRelatedField(
-        many = True,
-        read_only=True,
-        slug_field='username'
-     )
 
     class Meta:
         model = models.Commentaries

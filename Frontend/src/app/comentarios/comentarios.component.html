@@ -4,8 +4,7 @@
       <div class = "publicaciones" *ngFor = "let item of comentarios">
         <div class = "comentario">
           @{{item.user_profile.username}}
-          {{item.user}}
-          #{{item.topic}}<br>
+          {{item.topic}}<br>
           <br>{{item.commentary}}
         </div>
       </div>
@@ -25,12 +24,13 @@
           </button>
         </div>
         <div class = "new Comment">
+        Haz un comentario:
           <div class = "tema">
-           Tema del comentario  <input type = "text" name = "temaEntrar"  value = "#"><br>
-            <textarea name="comentarios" rows="10" cols="40"> comentario </textarea>
-            <button type = "button">
+           Tema del comentario  <input #temaComentario type = "text" name = "temaEntrar"  value = "#"><br>
+            <textarea #comentario name="comentarios" rows="10" cols="40"> comentario </textarea>
+          <button type = "button" (click) = "comentar(temaComentario.value, comentario.value)">
               Comentar
-            </button>
+          </button>
           </div>
         </div>
       </div>

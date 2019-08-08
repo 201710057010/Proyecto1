@@ -32,7 +32,8 @@ CORS_ORIGIN_WHITELIST = (
     "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:9000",
-    "http://localhost:4200"
+    "http://localhost:4200",
+    "http://0.0.0.0"
 )
 
 # Application definition

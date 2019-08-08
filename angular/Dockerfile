@@ -7,8 +7,8 @@ COPY Frontend/package.json Frontend/package-lock.json /app/Frontend/
 
 RUN npm install --prefix Frontend
 
-COPY ./app
-RUN run build --prefix Frontend -- --output-path=./dist/out
+COPY . /app
+RUN npm run build --prefix Frontend -- --output-path=./dist/out
 
 FROM nginx:1.15.7-alpine
 

@@ -25,16 +25,11 @@ SECRET_KEY = '2r2$e9%qxjwbjqh1b8ytjhei(a%pg-i_15a+rz3t8_%f^#qd)k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['*']
 
-CORS_ORIGIN_WHITELIST = (
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:8080",
-    "http://127.0.0.1:9000",
-    "http://localhost:4200",
-    "http://0.0.0.0"
-)
+CORS_ORIGIN_WHITELIST = [
+   "http://localhost:80"
+]
 
 # Application definition
 

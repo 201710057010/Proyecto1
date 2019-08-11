@@ -5,14 +5,14 @@ services:
    dj:
       container_name: dj
       build: backend
-      command: python manage.py runserver 0.0.0.0:80
+      command: python manage.py runserver 0.0.0.0:8080
       volumes:
         - ./backend:/code
       ports:
-         - "80:80"
+         - "8080:80"
    ng:
      container_name: ng
      build: angular
      ports:
-        - "8080:80"
+        - "80:80"
       

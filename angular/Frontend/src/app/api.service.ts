@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  baseurl = 'http://0.0.0.0';
+  baseurl = 'http://0.0.0.0:8080';
 
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
 

@@ -28,7 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = [
-   "http://localhost:80"
+   "http://localhost:80",
+   "http://localhost:8080",
+   "http://172.0.0.1:8080"
 ]
 
 # Application definition

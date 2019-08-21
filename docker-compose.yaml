@@ -5,7 +5,7 @@ services:
    dj:
       container_name: dj
       build: backend
-      command: python manage.py runserver 0.0.0.0:8080
+      command: python manage.py runserver 0.0.0.0:80
       volumes:
         - ./backend:/code
       ports:
